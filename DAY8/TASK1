@@ -1,0 +1,14 @@
+CREATE TABLE Student (
+    StudentID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(100) NOT NULL,
+    Email VARCHAR(100) UNIQUE,
+    Phone VARCHAR(15),
+    DateOfBirth DATE
+);
+
+CREATE TABLE Course (
+    CourseID INT PRIMARY KEY AUTO_INCREMENT,
+    CourseName VARCHAR(100) NOT NULL,
+    Credits INT,
+    Instructor VARCHAR(100)
+);
